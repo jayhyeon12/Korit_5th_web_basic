@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            box-sizing: border-box;
+            margin: 40px;
+            border: 3px solid #191;
+            /* border-width: 1px 2px 3px 4px;
+            border-top: 1px solid skyblue; */
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            padding: 20px 10px;
+            /* 시계 방향으로 적용(top - right - bottom - left): 위나 아래, 오른쪽이나 왼쪽 중 한쪽만 값을 지정하면 나머지 쪽은 반대 쪽과 같이 적용
+            border, padding에 따라 따로 값 적용 가능*/
+            width: 100px;
+            height: 100px;
+            background-color: #bbb;
+        }
+
+        .text{
+            display: inline-block;
+            margin: 20px;
+            padding: 10px;
+            width: 100px;
+            height: 100px;
+            background-color: antiquewhite;
+            color: burlywood;
+        }
+
+        .box1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 800px;
+            background-color: aliceblue;
+        }
+
+        .box2 {
+            margin: 20px;
+            width: 100px;
+            height: 100px;
+            background-color: coral;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">테스트</div>
+    <input type="text">
+
+    <span class="text">일반 텍스트</span>
+    <div class="box">
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+        
+    </div>
+
+</body>
+</html>

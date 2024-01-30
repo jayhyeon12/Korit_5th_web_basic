@@ -1,0 +1,40 @@
+<!-- 스타일 시트
+!important와 인라인 스타일은 사용하지 않음 -->
+
+<!-- 인라인 블록: 글자처럼 취급되는 도형 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 외부 스타일 시트 -->
+    <style>
+        div > .title {
+            color: cornflowerblue;
+        }
+
+        .title {
+            font-size: 60px;
+            color: cadetblue;
+        }
+
+        h1 {
+            font-size: 50px;
+            color: green;
+        }
+
+    </style>
+    <!-- 선택자의 우선 순위
+    1. class
+    2. 태그 -->
+
+</head>
+<body>
+    <div>
+        <h1 class="title title-width">제목3</h2>
+    </div>
+    <h1>제목2</h1>
+</body>
+</html>
