@@ -114,20 +114,20 @@ function removeData(id) {
 function editData(id) {
     let findIndex = -1;
 
-    for(let i = 0; i < dataList.length; i++) {
-        if(dataList[i].id === id) {
+    for(let i = 0; i < datalist.length; i++) {
+        if(datalist[i].id === id) {
             findIndex = i;
             break;
         }
     }
 
-    let findObj = dataList.filter((dataObj) => dataObj.id === id)[0];
+    let findObj = datalist.filter((dataObj) => dataObj.id === id)[0];
 
-    findIndex = dataList.indexOf(findObj);
+    findIndex = datalist.indexOf(findObj);
 
     const editInputs = document.querySelectorAll(".edit-inputs");
 
-    dataList[findIndex].content = editInputs[findIndex].value;
+    datalist[findIndex].content = editInputs[findIndex].value;
 
     getDataList();
 
